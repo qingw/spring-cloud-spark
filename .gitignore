@@ -1,4 +1,5 @@
 /target
+*/target/
 
 /.idea
 /.setting
@@ -7,4 +8,5 @@
 /.project
 
 *.iml
+*/*.iml
 
