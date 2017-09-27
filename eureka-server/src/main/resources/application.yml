@@ -1,0 +1,13 @@
+server:
+  port: ${port:8501}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:${server.port}/eureka/
+  instance:
+    hostname: eureka-server1
+
+spring:
+  application:
+    name: registory1

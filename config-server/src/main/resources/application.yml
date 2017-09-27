@@ -1,0 +1,13 @@
+server:
+  port: 8507
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      discovery:
+        enabled: true
+      server:
+        git:
+          uri: git@gitee.com:xd03122049/spring-cloud-tutorial.git
+          search-paths:
