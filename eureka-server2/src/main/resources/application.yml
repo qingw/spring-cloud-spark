@@ -1,0 +1,11 @@
+server:
+  port: 8500
+spring:
+  application:
+    name: eureka-server2
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:${server.port}/eureka,http://localhost:8501/eureka
+  instance:
+    hostname: eureka-server2

@@ -9,11 +9,14 @@ import org.springframework.web.client.RestTemplate;
  */
 @Service
 public class TestService {
-    @Autowired
-    RestTemplate restTemplate;
+  @Autowired
+  RestTemplate restTemplate;
 
-    public String hiService(String name) {
-        return restTemplate.getForObject("http://CLIENT/hello?name=" + name, String.class);
-    }
+  public String hiService(String name) {
+    return restTemplate.getForObject("http://CLIENT/hello?name=" + name, String.class);
+  }
 
+  public DataSourceConfig getConfig() {
+    return restTemplate.getForObject("http://CLIENT/config", DataSourceConfig.class);
+  }
 }
