@@ -1,8 +1,8 @@
 spring:
   application:
-    name: pinker
+    name: client1
   cloud:
     config:
-      profile: prod
-      label: master
-      uri: http://localhost:8507/
+      uri: http://localhost:8507
+  profiles:
+    active: prod

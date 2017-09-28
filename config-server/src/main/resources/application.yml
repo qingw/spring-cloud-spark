@@ -1,15 +1,20 @@
 server:
   port: 8507
 spring:
-  application:
-    name: config-server
   cloud:
     config:
-      discovery:
-        enabled: true
       server:
         git:
           uri: https://gitee.com/xd03122049/springcloud-tutorial
-          search-paths: config-repo
-          username: xd03122049
-          password: xd1610122618
+#          search-paths: config-repo
+#           username: username
+#          password: password
+#          default-label: master
+  application:
+    name: config-server
+  profiles:
+    active: native
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8501/eureka
