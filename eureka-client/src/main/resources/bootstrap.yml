@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: pinker
+  cloud:
+    config:
+      profile: prod
+      label: master
+      uri: http://localhost:8507/
