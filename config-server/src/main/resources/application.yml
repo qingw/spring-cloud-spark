@@ -9,7 +9,7 @@ spring:
         enabled: true
       server:
         git:
-          uri: https://github.com/xd03122049/springcloud-tutorial
-          search-paths: config-repo/pinker-test
+          uri: https://gitee.com/xd03122049/springcloud-tutorial
+          search-paths: config-repo
           username: xd03122049
           password: xd1610122618
