@@ -6,16 +6,16 @@ spring:
       server:
         git:
           uri: http://gitee.com/xd03122049/springcloud-tutorial
-#        native:
-#          search-locations: file:F:\\Javafile\\pinker-springcloud-admin\\config-repo\\
+        native:
+          search-locations: file:F:\\Javafile\\pinker-springcloud-admin\\config-repo\\
           search-paths: config-repo
           username: xd03122049
           password: xd1610122618
           default-label: master
   application:
     name: config-server
-#  profiles:
-#    active: native
+  profiles:
+    active: native
 eureka:
   client:
     serviceUrl:

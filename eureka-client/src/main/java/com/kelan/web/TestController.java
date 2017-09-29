@@ -32,6 +32,6 @@ public class TestController {
 
   @GetMapping("/config")
   public DataSourceConfig config() {
-    return new DataSourceConfig(driver, password, url, username);
+    return new DataSourceConfig(driver, password, url, username,port);
   }
 }

@@ -23,4 +23,5 @@ class DataSourceConfig implements Serializable {
   private String password;
   private String url;
   private String username;
+  private String port;
 }
