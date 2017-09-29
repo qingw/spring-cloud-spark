@@ -5,15 +5,17 @@ spring:
     config:
       server:
         git:
-          uri: https://gitee.com/xd03122049/springcloud-tutorial
-#          search-paths: config-repo
-#           username: username
-#          password: password
-#          default-label: master
+          uri: http://gitee.com/xd03122049/springcloud-tutorial
+#        native:
+#          search-locations: file:F:\\Javafile\\pinker-springcloud-admin\\config-repo\\
+          search-paths: config-repo
+          username: xd03122049
+          password: xd1610122618
+          default-label: master
   application:
     name: config-server
-  profiles:
-    active: native
+#  profiles:
+#    active: native
 eureka:
   client:
     serviceUrl:
