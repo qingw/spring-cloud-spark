@@ -11,12 +11,12 @@
   <modules>
     <module>eureka-server</module>
     <module>eureka-client</module>
-    <module>eureka-client2</module>
     <module>service-ribbon</module>
     <module>service-feign</module>
     <module>config-server</module>
     <module>service-zuul</module>
     <module>eureka-server2</module>
+    <module>server-zipkin</module>
   </modules>
 
   <!--Project Info-->
@@ -56,20 +56,25 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>1.4.2.RELEASE</version>
+    <version>1.5.6.RELEASE</version>
   </parent>
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+    </dependency>
+
   </dependencies>
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
-        <version>Camden.SR3</version>
+        <version>Dalston.SR4</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>

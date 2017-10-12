@@ -7,6 +7,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 /**
  * Created by xd031 on 2017/9/26.
  * 8502,8503,8504
+ * http://localhost:15672/#/
  */
 @SpringBootApplication
 @EnableDiscoveryClient
