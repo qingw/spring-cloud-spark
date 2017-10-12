@@ -192,4 +192,12 @@ public class TestControllerTest {
     HttpEntity<DataSourceConfig> entity = new HttpEntity<DataSourceConfig>(dataSource, headers);
     System.out.println(restTemplate.exchange(URL+"/{id}", HttpMethod.DELETE, entity, Object.class,"1").getBody());
   }
+  @Test
+  public void testConfigWithRestForDelete2() throws Exception {
+    DataSourceConfig dataSource = new DataSourceConfig("hs", "hs", "hs", "hs", "hs");
+    HttpHeaders headers = new HttpHeaders();
+    headers.setContentType(MediaType.APPLICATION_JSON_UTF8);
+    HttpEntity<DataSourceConfig> entity = new HttpEntity<DataSourceConfig>(dataSource, headers);
+    System.out.println(restTemplate.exchange(URL+"/{id}", HttpMethod.DELETE, entity, Object.class,"1").getBody());
+  }
 }
